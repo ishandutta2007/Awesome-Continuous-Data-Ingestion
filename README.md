@@ -1,48 +1,53 @@
-# Awesome-Continuous-Data-Ingestion
+# 🚀 Awesome Continuous Data Ingestion
 
-# Awesome-Continuous-Data-Ingestion
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Continuous Data Ingestion Banner" width="100%" />
+</p>
 
-**Top Continuous Data Ingestion (Opensource) 🌟 Star if you like it! 🌟**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-Data-Ingestion/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Continuous-Data-Ingestion?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-Data-Ingestion/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Continuous-Data-Ingestion?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-Data-Ingestion/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Continuous-Data-Ingestion?style=flat-square&color=blue" alt="GitHub issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Continuous-Data-Ingestion/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Continuous-Data-Ingestion?style=flat-square&color=green" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+---
 
+## 📖 Overview & SEO Summary
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+A meticulously curated directory of top **Continuous Data Ingestion**, **Change Data Capture (CDC)**, **Real-Time Streaming Pipelines**, and **Modern ELT** platforms. Whether evaluating fully managed cloud SaaS platforms for enterprise scale or self-hosted, open-source ingestion engines with zero vendor lock-in, this list provides comprehensive technical benchmarks, pricing transparent breakdowns, and architecture guides.
 
-*Focused on Real-Time ELT, CDC Replication, Streaming Pipelines & Self-Hosted Data Movement*
+**Key Topics Covered:** `data-ingestion` • `change-data-capture` • `elt` • `streaming-data` • `data-engineering` • `apache-kafka` • `apache-flink` • `real-time-analytics` • `lakehouse`
 
-**Last updated: November 2026**
+🌟 **Star this repository if you find it helpful!** 🌟
 
+*Last updated: November 2026*
 
+---
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Continuous Data Ingestion**. These tools enable organizations to move data continuously from databases, APIs, and event streams into warehouses and lakes—from fully managed platforms with hundreds of pre-built connectors and automated schema handling to open-source engines that give teams complete control over their ingestion pipelines and infrastructure.
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [Top Projects (Ranked by Stars)](#top-projects-ranked-by-stars)
+  - [Specialized & Lightweight CDC Tools](#specialized--lightweight-cdc-tools)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer & Architecture Guide](#️-disclaimer--architecture-guide)
 
+---
 
-**Examples** include Snowflake Snowpipe, Fivetran, Airbyte, Confluent Cloud, AWS Kinesis Data Firehose, Google Cloud Dataflow, Hevo Data, Matillion, Qlik Replicate, and Estuary Flow (the category leaders in commercial space).
-
-
-
-**Open-source emphasis**: This section is expanded with every relevant project for self-hosted ingestion, CDC replication, and open streaming infrastructure. **Critical note**: The open-source landscape is anchored by **Airbyte**—the leading open-source ELT platform with 600+ connectors and an Agent SDK for AI workloads . **Debezium** remains the standard for log-based CDC, powering many commercial platforms' database replication . **Apache NiFi, Kafka, and Flink** form the backbone of self-hosted streaming pipelines . No single open-source project matches Fivetran's fully managed reliability or Confluent Cloud's Kafka-as-a-service convenience, but for teams willing to operate infrastructure, the open-source options are production-proven at scale.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The continuous data ingestion and real-time data integration sector is estimated at **$15B–$20B** (projected to reach **$30B–$50B+ by the 2030s** at an estimated 10%–13% CAGR), driven by enterprise demands for streaming pipelines, log-based CDC replication, and AI-ready real-time data stores. The sector features a **concentrated core with a moderately fragmented perimeter**: hyperscalers and top data platform incumbents (AWS, Google Cloud, Snowflake, Confluent) capture the lion's share of enterprise platform spend, while specialized ELT/CDC SaaS vendors compete in a moderately fragmented layer differentiated by connector breadth, zero-maintenance ingestion, and streaming speed.
 
-## SaaS/Hosted Platforms
+---
+
+## ☁️ SaaS & Hosted Platforms
 
 | Company / Product | Scale (Valuation / Revenue) | Starting Pricing | Free Tier / Free Trial Limits | Key Features & Best For |
 |---|---|---|---|---|
@@ -57,102 +62,117 @@ The continuous data ingestion and real-time data integration sector is estimated
 | **[Hevo Data](https://hevodata.com/)** | **~$45M–$47M Annual Revenue** (~$43M total venture funding) | **$265/month** billed annually ($299 billed monthly) for the Starter Plan (5M events/month) | **Free tier: 1 million events/month forever** (up to 5 users, limited connectors, 1-hr scheduling) + 14-day full feature trial | Low-maintenance, no-code continuous data pipeline platform offering real-time CDC with 150+ source integrations. |
 | **[Estuary Flow](https://estuary.dev/)** | **~$100M–$250M Valuation** ($17M Series A; ~$1M–$10M revenue) | **$0.50 per GB** transferred on Cloud plan beyond free tier limits | **Free tier: 10 GB/month data transfer forever** and up to **2 active connector tasks** (no credit card required) | Real-time streaming ETL/CDC platform built on Gazette streaming broker, delivering millisecond data synchronization. |
 
-## Open-Source GitHub Projects
+---
 
+## 💻 Open-Source GitHub Projects
 
+### Top Projects (Ranked by Stars)
 
-- **[Airbyte](https://github.com/airbytehq/airbyte)**
+- **[Apache Spark](https://github.com/apache/spark)** [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+  **Unified engine for large-scale data analytics and Structured Streaming** (Apache 2.0). Provides fault-tolerant, exactly-once continuous stream processing over massive datasets with native connectors for Kafka, Delta Lake, Apache Iceberg, and cloud object stores. **Best for**: high-throughput batch and micro-batch/continuous stream processing unified under a single API.
 
-  **Open-source data movement for ELT pipelines and AI agents** (Elastic License 2.0 for core) — **the leading open-source ELT platform** with the largest connector ecosystem and a new Agent SDK for AI workloads . **Features**: **600+ connectors** for APIs, databases, warehouses, lakes, and AI applications; **Connector Builder** (no-code) and **CDK** (low-code) for custom connectors; **Airbyte Agents** and open-source **Agent SDK** (`uv pip install airbyte-agent-sdk`) for giving AI agents real-time access to business data, working with pydantic-ai, LangChain, OpenAI Agents, and FastMCP . For database sources, **incremental CDC** uses an embedded Debezium instance within connector runtimes—Airbyte manages the CDC lifecycle (snapshot, streaming, offset management) . **Tech stack**: Java (platform), Python (connectors). **Deploy**: Self-hosted (Docker, Kubernetes) or Airbyte Cloud. **Trade-off**: **Operational overhead**—self-hosted Airbyte requires maintenance for platform and connectors. Connector quality varies. **Best for**: teams wanting the broadest open-source connector coverage for continuous ingestion into warehouses and lakes—without per-row SaaS costs.
+- **[Apache Kafka](https://github.com/apache/kafka)** [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers)  
+  **Distributed event streaming platform** (Apache 2.0). Serves as the central backbone for continuous data ingestion, CDC pipelines, and event-driven architectures. Features KRaft consensus mode, Kafka Connect for plug-and-play source/sink connectors, Kafka Streams, and durable partitioned logs. **Best for**: central event bus infrastructure with durable replayability.
 
+- **[Apache Flink](https://github.com/apache/flink)** [![Stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers)  
+  **Stateful stream processing framework** (Apache 2.0). The industry standard for low-latency, true event-by-event continuous stream ingestion with stateful event-time handling, exactly-once checkpointing, and native Flink CDC connectors for database ingestion. **Best for**: complex real-time event analytics and low-latency continuous stream transformations.
 
+- **[Vector](https://github.com/vectordotdev/vector)** [![Stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
+  **High-performance observability and event data pipeline** (MPL 2.0). Written in Rust for ultra-low memory overhead and maximum throughput. Ingests, transforms, and routes logs, metrics, and event streams across hundreds of endpoints and warehouses. **Best for**: resource-efficient edge or sidecar telemetry and event log streaming.
 
-- **[Debezium](https://github.com/debezium/debezium)**
+- **[Airbyte](https://github.com/airbytehq/airbyte)** [![Stars](https://img.shields.io/github/stars/airbytehq/airbyte?style=social&color=white)](https://github.com/airbytehq/airbyte/stargazers)  
+  **Open-source data movement engine for ELT pipelines and AI agents** (ELv2). Features 600+ pre-built connectors for APIs, databases, data warehouses, and vector stores, accompanied by a low-code Connector Builder and Agent SDK for continuous data retrieval into LLM architectures. **Best for**: widest catalog of plug-and-play connectors for continuous ELT data syncs.
 
-  **Open-source distributed platform for change data capture** (Apache 2.0) — **the de facto standard for log-based CDC**, with ~30 database source connectors . **Features**: Captures row-level changes from MySQL, PostgreSQL, MongoDB, Oracle, SQL Server, Db2, Cassandra, and more; streams changes into Kafka topics; **Kafka Connect compatible**—runs in a Connect cluster with horizontal scaling and durable offsets stored in Kafka; **Single Message Transforms** for filtering and routing; snapshot + incremental switching with exactly-once semantics. **Deployment options**: Kafka Connect (most common), Debezium Server (standalone, can route to Kinesis, Pub/Sub, HTTP), or embedded engine (library mode) . **Tech stack**: Java. **Deploy**: Kafka Connect cluster, Debezium Server, or embedded. **Trade-off**: **Requires Kafka for Kafka Connect deployment**—adds operational overhead. Snapshot of large tables can create binlog backlog. **Best for**: teams with existing Kafka infrastructure or multi-consumer fanout requirements—the most mature open-source CDC platform with a proven track record at enterprise scale.
+- **[Apache Pulsar](https://github.com/apache/pulsar)** [![Stars](https://img.shields.io/github/stars/apache/pulsar?style=social&color=white)](https://github.com/apache/pulsar/stargazers)  
+  **Multi-tenant, distributed messaging and streaming platform** (Apache 2.0). Employs a cloud-native architecture decoupling compute (Pulsar brokers) from stateful storage (Apache BookKeeper), with built-in geo-replication and Pulsar IO connectors. **Best for**: multi-tenant streaming infrastructure requiring isolated storage tiers and seamless scaling.
 
+- **[Fluentd](https://github.com/fluent/fluentd)** [![Stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers)  
+  **Unified logging layer** (Apache 2.0, CNCF Graduated). Provides a comprehensive plug-and-play architecture for collecting and forwarding semi-structured JSON log events from web servers, apps, and databases into analytic storage destinations. **Best for**: unified log collection and routing across hybrid cloud deployments.
 
+- **[Debezium](https://github.com/debezium/debezium)** [![Stars](https://img.shields.io/github/stars/debezium/debezium?style=social&color=white)](https://github.com/debezium/debezium/stargazers)  
+  **Distributed log-based Change Data Capture platform** (Apache 2.0). The gold standard for non-intrusive database replication. Inspects transaction logs across MySQL, PostgreSQL, MongoDB, SQL Server, Oracle, and Db2 to capture sub-second row changes into Kafka topics or standalone streaming endpoints. **Best for**: low-latency, zero-loss database replication without polling overhead.
 
-- **[Apache NiFi](https://github.com/apache/nifi)**
+- **[Apache SeaTunnel](https://github.com/apache/seatunnel)** [![Stars](https://img.shields.io/github/stars/apache/seatunnel?style=social&color=white)](https://github.com/apache/seatunnel/stargazers)  
+  **Next-generation high-performance distributed data integration engine** (Apache 2.0). Capable of synchronizing massive volumes of data daily with 100+ connectors, connector-independent Zeta engine, schema evolution, and multi-table CDC synchronization. **Best for**: high-throughput distributed batch and real-time CDC across heterogenous storage.
 
-  **Easy-to-use, powerful, and reliable system to process and distribute data** (Apache 2.0) — **the most mature open-source dataflow automation tool**, with a browser-based UI for designing and monitoring continuous ingestion pipelines . **Features**: **Browser UI** for design, control, and monitoring with runtime management and versioned pipelines; **provenance tracking**—searchable history with graph data lineage from source to destination; **guaranteed delivery** with retry and backoff; **horizontal scaling** with clustering; **extensible processors** (native Python support); **secure by default** with HTTPS, OIDC/SAML SSO, and role-based access. Part of Cloudera's Data in Motion solution alongside Kafka and Flink . **Tech stack**: Java. **Deploy**: Self-hosted (Java 21 required). **Trade-off**: **Heavier than library-first tools**—requires Java runtime and operational management. Not a simple ELT tool; better suited for complex dataflow orchestration. **Best for**: organizations needing a proven, secure dataflow platform for continuous ingestion with visual design, provenance, and clustering—especially those handling sensitive data with compliance requirements.
+- **[Redpanda Connect (formerly Benthos)](https://github.com/redpanda-data/connect)** [![Stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
+  **Resilient, high-performance stream processor** (Apache 2.0). Written in Go, it runs as an ultra-fast, stateless single-binary stream orchestrator connecting dozens of sources to sinks with an expressive mapping language (Bloblang) and backpressure management. **Best for**: lightweight, declarative streaming pipelines without heavy cluster orchestration.
 
+- **[Apache Beam](https://github.com/apache/beam)** [![Stars](https://img.shields.io/github/stars/apache/beam?style=social&color=white)](https://github.com/apache/beam/stargazers)  
+  **Unified programming model for batch and streaming pipelines** (Apache 2.0). Write pipeline logic once in Python, Java, or Go and execute it portably across modern execution runtimes (Apache Flink, Apache Spark, or Google Cloud Dataflow). **Best for**: multi-language data processing pipelines portable across cloud and self-hosted runners.
 
+- **[Fluent Bit](https://github.com/fluent/fluent-bit)** [![Stars](https://img.shields.io/github/stars/fluent/fluent-bit?style=social&color=white)](https://github.com/fluent/fluent-bit/stargazers)  
+  **Super fast, lightweight log, metric, and trace processor** (Apache 2.0). Built in C with minimal memory footprint (~few megabytes), optimized for Kubernetes, cloud, and IoT continuous event telemetry streaming. **Best for**: embedded edge devices and Kubernetes cluster sidecars.
 
-- **[Apache Flink](https://github.com/apache/flink)**
+- **[Apache NiFi](https://github.com/apache/nifi)** [![Stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers)  
+  **Visual dataflow automation and routing engine** (Apache 2.0). Provides a drag-and-drop browser UI for designing, monitoring, and controlling continuous dataflows with bidirectional provenance, dynamic prioritization, and backpressure monitoring. **Best for**: visual pipeline development, complex compliance routing, and granular data lineage.
 
-  **Stream processing framework** (Apache 2.0) — **the standard for stateful stream processing and continuous ingestion with exactly-once semantics** . **Features**: **True stream processing** (not micro-batch); **exactly-once semantics** with checkpointing; **event time processing** with watermarks; **stateful operations** with RocksDB backend; **Flink CDC connectors** for database ingestion; **Kafka, Kinesis, and Pulsar connectors**; **SQL API** for stream analytics. Part of Cloudera's Data in Motion alongside NiFi and Kafka . **Tech stack**: Java, Scala. **Deploy**: Self-hosted (Kubernetes, YARN) or managed (AWS KDA, Confluent). **Trade-off**: **Steep learning curve**—operational complexity for checkpointing, state management, and cluster tuning. **Best for**: teams needing complex stream processing with exactly-once guarantees—especially those building real-time analytics on continuous data streams.
+- **[Apache Pinot](https://github.com/apache/pinot)** [![Stars](https://img.shields.io/github/stars/apache/pinot?style=social&color=white)](https://github.com/apache/pinot/stargazers)  
+  **Real-time distributed OLAP datastore** (Apache 2.0). Designed to continuously ingest millions of events per second directly from streaming sources like Kafka and Kinesis, indexing them immediately for low-latency analytical queries. **Best for**: user-facing real-time analytics with sub-second ingestion-to-query latency.
 
+- **[Meltano](https://github.com/meltano/meltano)** [![Stars](https://img.shields.io/github/stars/meltano/meltano?style=social&color=white)](https://github.com/meltano/meltano/stargazers)  
+  **CLI-first, code-driven ELT integration engine** (MIT). Built upon the open Singer specification with 600+ Singer taps and targets, GitOps-ready configuration, and built-in integration with dbt and orchestrators. **Best for**: software-engineering-centric data teams desiring code-defined ELT pipelines.
 
+- **[Apache Gobblin](https://github.com/apache/gobblin)** [![Stars](https://img.shields.io/github/stars/apache/gobblin?style=social&color=white)](https://github.com/apache/gobblin/stargazers)  
+  **Unified data ingestion framework for big data lakes** (Apache 2.0). Originally created at LinkedIn, Gobblin handles continuous data ingestion from streaming and batch sources directly into HDFS, S3, and cloud lakes with self-serve compliance and state management. **Best for**: enterprise lakehouse ingestion with built-in compaction and schema governance.
 
-- **[Apache Kafka](https://github.com/apache/kafka)**
-
-  **Distributed event streaming platform** (Apache 2.0) — **the backbone for continuous data ingestion**, serving as the central event bus for CDC, streaming pipelines, and event-driven architectures . **Features**: **KRaft mode** (no ZooKeeper dependency since Kafka 3.3+) ; **durable, replicated event log**; **Kafka Connect** for source/sink connectors; **Kafka Streams** for stream processing; **Schema Registry** for schema management; **exactly-once semantics** (v0.11+). **Tech stack**: Java, Scala. **Deploy**: Self-hosted (Kubernetes with Strimzi, bare metal) or managed (Confluent Cloud, MSK). **Trade-off**: **Operational complexity**—requires cluster management, monitoring, and tuning. **Best for**: teams building event-driven architectures needing a durable, replayable event log as the foundation for continuous ingestion—pair with Debezium for CDC and Kafka Connect for sinks.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **rivet** — Single-binary data extraction and CDC tool (license per repo). Source-safe keyset reads, CDC on four engines (MySQL, PostgreSQL, SQL Server, MongoDB, Oracle preview), load to BigQuery/Snowflake/ClickHouse with at-least-once delivery and reconciliation . **Note**: No platform required—runs from cron, Airflow, or Kubernetes CronJob. **Best for**: teams wanting a lightweight, self-contained CDC and warehouse loading tool without a full platform.
-
-- **Kafka Connect JDBC Source** — Query-based CDC via polling `WHERE updated_at > last_checkpoint`. **Note**: **Does not capture deletes**; depends on monotonic timestamp columns. **Production recommendation: avoid unless binlog access is impossible**. **Best for**: legacy systems that cannot enable transaction log access.
-
-- **oversync** — Open-source data sync engine (license per repo). Kafka, SurrealDB, and JDBC sources (via Trino) to Kafka, PostgreSQL, MySQL, ClickHouse, and MCP targets; transform steps for field mapping . **Note**: Newer project; verify maturity. **Best for**: teams wanting a configurable sync engine with transform capabilities.
-
-
-
-**Frameworks for building custom systems**: Combine **Airbyte** for broad connector coverage with **Debezium** for log-based CDC into Kafka, **Apache Flink** for stream processing, and **Apache NiFi** for complex dataflow orchestration—creating a continuous ingestion stack. **None of these match Fivetran's fully managed reliability or Confluent Cloud's managed Kafka convenience**, but for teams prioritizing cost control and data ownership, the open-source options cover virtually every ingestion pattern.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, license (for open-source), and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Continuous data ingestion platforms handling production data must comply with data protection regulations (GDPR, CCPA, etc.) and implement appropriate encryption, access controls, and audit logging.
-
-- **The "ELT platform" vs. "CDC engine" vs. "stream processor" vs. "event bus" distinction is critical.** **Fivetran, Airbyte Cloud, Hevo, Matillion, and Estuary** are **ELT platforms**—they extract from sources and load to destinations. **Airbyte (self-hosted) and rivet** are **self-hosted ELT/CDC tools**—you operate the ingestion. **Debezium** is a **CDC engine**—it captures database changes into Kafka topics but does not load to warehouses . **Apache Flink** is a **stream processor**—it processes continuous data streams with exactly-once semantics. **Apache Kafka** is an **event bus**—it stores and distributes events but does not extract or load. **Apache NiFi** is **dataflow automation**—it routes and transforms data with provenance. **Choose based on whether you need extraction, capture, processing, transport, or orchestration.**
-
-- **Airbyte is the pragmatic default for broad connector coverage.** 600+ connectors, an active community, and the new Agent SDK for AI workloads make it the closest open-source analog to Fivetran . **The trade-off**: self-hosted operations and variable connector quality. For database sources, Airbyte's CDC mode embeds Debezium .
-
-- **Debezium is the standard for log-based CDC**—it reads transaction logs rather than polling, capturing every change including deletes with low latency and minimal database load . **The trade-off**: requires Kafka for the most common deployment. **Debezium Server** offers a standalone path without Kafka Connect.
-
-- **Kafka + Flink + NiFi is the Cloudera-endorsed streaming stack**—NiFi for ingestion and routing, Kafka for the event backbone, Flink for processing . **This is a proven combination** for teams building production-grade streaming pipelines.
-
-- **rivet is the most focused lightweight option**—a single binary for CDC and warehouse loading with reconciliation and proof, no platform required . **The trade-off**: newer project; limited connector ecosystem compared to Airbyte or Debezium.
-
-- **Pricing opacity varies.** Fivetran, Airbyte Cloud, Confluent Cloud, Dataflow, Hevo, and Matillion publish consumption-based pricing. Snowflake Snowpipe uses Snowflake credits. Qlik Replicate requires sales contact. **Validate with direct vendor conversations against your actual data volume and latency requirements.**
-
-- Self-hosted open-source solutions require proper infrastructure (Kafka cluster for Debezium, Flink cluster for processing, Java runtime for NiFi), security hardening, and ongoing maintenance. **Continuous ingestion pipelines handle production data**—ensure your deployment includes monitoring for lag, schema change handling, and exactly-once guarantees before relying on it for business-critical analytics.
-
-
+- **[Apache InLong](https://github.com/apache/inlong)** [![Stars](https://img.shields.io/github/stars/apache/inlong?style=social&color=white)](https://github.com/apache/inlong/stargazers)  
+  **One-stop, massive-scale data ingestion platform** (Apache 2.0). Developed at Tencent, InLong is designed to ingest over 40+ trillion data pieces daily across distributed reporting, queuing, sorting, and storage components. **Best for**: hyperscale streaming ingestion requiring integrated collection, buffering, and loading.
 
 ---
 
+### Specialized & Lightweight CDC Tools
 
+- **[rivet](https://github.com/rivet-data/rivet)** [![Stars](https://img.shields.io/github/stars/rivet-data/rivet?style=social&color=white)](https://github.com/rivet-data/rivet/stargazers) — Single-binary data extraction and CDC tool. Features keyset reads, CDC on relational databases (MySQL, PostgreSQL, SQL Server), and direct loading to BigQuery/Snowflake/ClickHouse with automated reconciliation.
+- **Kafka Connect JDBC Source** — Standard JDBC polling CDC connector via `WHERE updated_at > last_checkpoint`. Suitable for legacy databases where binary/transaction log access is disallowed.
+- **oversync** — Configurable open-source data synchronization engine supporting Kafka, SurrealDB, JDBC, and MCP targets with field mapping transformations.
 
-**Made for data engineers, platform teams, and organizations building transparent continuous data ingestion solutions.**
+---
 
-Let's make Continuous Data Ingestion more open, data-driven, and pipeline-reliable.
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these simple steps:
+
+1. 🍴 **Fork** the repository.
+2. 🌿 Create a feature branch (`git checkout -b feature/new-ingestion-tool`).
+3. 📝 Add your entry into `README.md` keeping alphabetical or star-ranked placement and descriptive format intact.
+4. 💡 Ensure you include: Tool Name, URL, GitHub Repo, License, and Key Features / Best For description.
+5. 🚀 Open a **Pull Request** with a concise summary of the addition.
+
+---
+
+## 💖 Support & Sponsorship
+
+If this curated guide helps your data architecture decisions or saves your engineering team hours of research, please consider supporting the project:
+
+- ⭐ **Star this repository** to improve visibility and help others discover it!
+- 🍴 **Fork and share** with fellow data engineers, architects, and communities.
+- ☕ **Buy a coffee & sponsor**: You can support ongoing maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support is deeply appreciated and keeps this ecosystem matrix continuously updated! 🙏
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Continuous-Data-Ingestion&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Continuous-Data-Ingestion&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer & Architecture Guide
+
+- This is a **community-curated** technical index — not an exhaustive list or formal commercial endorsement.
+- Continuous data ingestion platforms handling production workloads must adhere to data protection regulations (GDPR, CCPA, HIPAA) with strict encryption, network security, and compliance logging.
+- **Understanding Architecture Roles:**
+  - **ELT Platforms** (*Fivetran, Airbyte Cloud, Hevo, Matillion, Estuary*): Handle end-to-end extraction, schema normalization, and delivery into analytical warehouses/lakes.
+  - **CDC Engines** (*Debezium, Qlik Replicate*): Non-intrusively stream raw row mutations from transaction logs without batch query performance degradation.
+  - **Stream Processors** (*Apache Flink, Apache Spark Streaming, Apache Beam*): Provide stateful real-time aggregation, event-time windowing, and exactly-once transformations.
+  - **Distributed Event Fabrics** (*Apache Kafka, Apache Pulsar*): Act as durable, replayable central storage backbones connecting data producers to consumer fleets.
+  - **Visual Dataflow Engines** (*Apache NiFi*): Provide graphical orchestration, data provenance tracking, and enterprise routing.
+
+---
+
+<p align="center">
+  <b>Built for data engineers, platform architects, and organizations building continuous streaming infrastructure.</b><br>
+  <sub>Let's make Continuous Data Ingestion transparent, high-performance, and resilient.</sub>
+</p>

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="streamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="streamGrad2" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2937" stroke-width="0.75" stroke-opacity="0.4" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+
+    <style>
+      @keyframes pulseSlow {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.55; transform: scale(1.08); }
+      }
+      @keyframes streamFlow {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes packetMove1 {
+        0% { cx: 80px; cy: 70px; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 1120px; cy: 70px; opacity: 0; }
+      }
+      @keyframes packetMove2 {
+        0% { cx: 1120px; cy: 350px; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 80px; cy: 350px; opacity: 0; }
+      }
+      @keyframes floatNode {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      .pulsing-orb {
+        transform-origin: center;
+        animation: pulseSlow 7s ease-in-out infinite;
+      }
+      .flowing-stream {
+        stroke-dasharray: 80 120;
+        animation: streamFlow 4s linear infinite;
+      }
+      .flowing-stream-rev {
+        stroke-dasharray: 100 140;
+        animation: streamFlow 5s linear reverse infinite;
+      }
+      .packet-1 {
+        animation: packetMove1 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .packet-2 {
+        animation: packetMove2 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .node-float {
+        animation: floatNode 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Grid Overlay -->
+  <rect width="1200" height="420" fill="url(#grid)" rx="16" />
+
+  <!-- Ambient Glowing Orbs in Background -->
+  <circle cx="200" cy="100" r="160" fill="#0284c7" opacity="0.18" filter="url(#softGlow)" class="pulsing-orb" />
+  <circle cx="1020" cy="300" r="180" fill="#7c3aed" opacity="0.18" filter="url(#softGlow)" class="pulsing-orb" style="animation-delay: -3.5s;" />
+  <circle cx="600" cy="210" r="220" fill="#2563eb" opacity="0.1" filter="url(#softGlow)" />
+
+  <!-- Dynamic Flow Lines & Streaming Particles (Background Layer) -->
+  <g opacity="0.75">
+    <!-- Top Stream Wave -->
+    <path d="M 50,70 Q 300,120 600,60 T 1150,70" fill="none" stroke="#1e293b" stroke-width="3" />
+    <path d="M 50,70 Q 300,120 600,60 T 1150,70" fill="none" stroke="url(#streamGrad1)" stroke-width="3.5" class="flowing-stream" />
+
+    <!-- Bottom Stream Wave -->
+    <path d="M 50,350 Q 300,300 600,360 T 1150,350" fill="none" stroke="#1e293b" stroke-width="3" />
+    <path d="M 50,350 Q 300,300 600,360 T 1150,350" fill="none" stroke="url(#streamGrad2)" stroke-width="3.5" class="flowing-stream-rev" />
+
+    <!-- Animated Packets / Pulses -->
+    <circle r="4.5" fill="#38bdf8" filter="url(#glow)" class="packet-1" />
+    <circle r="4.5" fill="#c084fc" filter="url(#glow)" class="packet-2" />
+  </g>
+
+  <!-- Subtle Architecture Node Visuals at Corners (Background/Sides) -->
+  <g opacity="0.45" class="node-float">
+    <!-- Source DB Icon Graphic (Left) -->
+    <g transform="translate(70, 160)">
+      <rect width="64" height="76" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <ellipse cx="32" cy="18" rx="22" ry="7" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <path d="M 10,18 v 18 c 0 4 10 7 22 7 s 22 -3 22 -7 v -18" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+      <path d="M 10,36 v 18 c 0 4 10 7 22 7 s 22 -3 22 -7 v -18" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="32" y="88" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle" font-weight="600">CDC SOURCE</text>
+    </g>
+    <!-- Target Warehouse Graphic (Right) -->
+    <g transform="translate(1066, 160)">
+      <rect width="64" height="76" rx="8" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+      <polygon points="32,14 54,26 32,38 10,26" fill="#0f172a" stroke="#c084fc" stroke-width="1.5" />
+      <polygon points="32,34 54,46 32,58 10,46" fill="#0f172a" stroke="#c084fc" stroke-width="1.5" />
+      <text x="32" y="88" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle" font-weight="600">LAKEHOUSE</text>
+    </g>
+  </g>
+
+  <!-- Foreground Content Area: Clear, High-Contrast & Protected from Overlap -->
+  <!-- Top Badge / Pill -->
+  <g transform="translate(600, 75)">
+    <rect x="-170" y="-15" width="340" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="-145" cy="0" r="5" fill="#10b981" filter="url(#glow)" />
+    <text x="-132" y="4.5" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="0.5">CURATED LIST &amp; ECOSYSTEM MATRIX</text>
+  </g>
+
+  <!-- Main Title (Centered Foreground) -->
+  <text x="600" y="160" text-anchor="middle" fill="url(#primaryGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="-1">
+    Awesome Continuous Data Ingestion
+  </text>
+
+  <!-- Subtitle (Centered Foreground) -->
+  <text x="600" y="210" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400">
+    Real-Time ELT • Log-Based CDC • Streaming Pipelines • Cloud &amp; Open Source
+  </text>
+
+  <!-- Feature Pills / Badges (Centered Foreground) -->
+  <g transform="translate(600, 260)">
+    <!-- Pill 1: Change Data Capture -->
+    <g transform="translate(-310, 0)">
+      <rect x="0" y="0" width="140" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1" opacity="0.9" />
+      <text x="70" y="20.5" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ Real-Time CDC</text>
+    </g>
+
+    <!-- Pill 2: Stream Processing -->
+    <g transform="translate(-155, 0)">
+      <rect x="0" y="0" width="145" height="32" rx="16" fill="#0f172a" stroke="#818cf8" stroke-width="1" opacity="0.9" />
+      <text x="72.5" y="20.5" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🌊 Stream Fabrics</text>
+    </g>
+
+    <!-- Pill 3: Modern ELT -->
+    <g transform="translate(7, 0)">
+      <rect x="0" y="0" width="135" height="32" rx="16" fill="#0f172a" stroke="#c084fc" stroke-width="1" opacity="0.9" />
+      <text x="67.5" y="20.5" fill="#e879f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🔄 Modern ELT</text>
+    </g>
+
+    <!-- Pill 4: Zero Data Loss -->
+    <g transform="translate(160, 0)">
+      <rect x="0" y="0" width="150" height="32" rx="16" fill="#0f172a" stroke="#34d399" stroke-width="1" opacity="0.9" />
+      <text x="75" y="20.5" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🛡️ Exactly-Once Load</text>
+    </g>
+  </g>
+
+  <!-- Tagline Footer in Banner -->
+  <text x="600" y="325" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">
+    Tracking 10+ Cloud Platforms &amp; 12+ Open-Source Engines for Data Engineering &amp; Lakehouse Infrastructure
+  </text>
+</svg>
