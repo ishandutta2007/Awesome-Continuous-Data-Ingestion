@@ -32,79 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The continuous data ingestion and real-time data integration sector is estimated at **$15B–$20B** (projected to reach **$30B–$50B+ by the 2030s** at an estimated 10%–13% CAGR), driven by enterprise demands for streaming pipelines, log-based CDC replication, and AI-ready real-time data stores. The sector features a **concentrated core with a moderately fragmented perimeter**: hyperscalers and top data platform incumbents (AWS, Google Cloud, Snowflake, Confluent) capture the lion's share of enterprise platform spend, while specialized ELT/CDC SaaS vendors compete in a moderately fragmented layer differentiated by connector breadth, zero-maintenance ingestion, and streaming speed.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[Fivetran](https://www.fivetran.com/)**
-
-  **Fully managed ELT platform** with 500+ connectors and automated schema drift handling. **Pricing**: Consumption-based (monthly active rows). **Free tier**: Limited free tier. **Best for**: organizations wanting zero-maintenance data ingestion from SaaS apps and databases into warehouses—**trade-off**: per-row costs escalate quickly at volume.
-
-
-
-- **[Airbyte Cloud](https://airbyte.com/)**
-
-  **Managed version of the open-source Airbyte platform** with 600+ connectors and a Connector Builder . **Pricing**: Consumption-based; open-source self-hosted version available free. **Free tier**: Trial available. **Best for**: teams wanting the open-source connector ecosystem without operating the infrastructure.
-
-
-
-- **[Confluent Cloud](https://www.confluent.io/)**
-
-  **Fully managed Kafka** with connectors, stream processing (ksqlDB), and schema registry. **Pricing**: Consumption-based (throughput, storage, connectors). **Free tier**: Limited trial. **Best for**: teams wanting Kafka without operational overhead—**trade-off**: premium pricing for managed convenience.
-
-
-
-- **[AWS Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/)**
-
-  **Managed streaming delivery** to S3, Redshift, Elasticsearch, and Splunk. **Pricing**: Pay-per-GB ingested. **Free tier**: AWS Free Tier applies. **Best for**: AWS-centric teams wanting simple streaming delivery without managing consumers—**trade-off**: limited transformation capabilities compared to Kafka Connect or Flink.
-
-
-
-- **[Google Cloud Dataflow](https://cloud.google.com/dataflow)**
-
-  **Managed Apache Beam** for stream and batch processing. **Pricing**: Consumption-based (vCPU and memory per hour). **Free tier**: Limited trial. **Best for**: GCP-centric teams wanting unified stream/batch pipelines with autoscaling—**trade-off**: Beam learning curve.
-
-
-
-- **[Snowflake Snowpipe](https://www.snowflake.com/)**
-
-  **Continuous data loading** into Snowflake from S3, GCS, or Azure Blob. **Pricing**: Consumption-based (Snowflake credits for serverless compute). **Free tier**: Trial credits. **Best for**: Snowflake customers wanting low-latency file ingestion—**note**: file-based, not database CDC; pair with Fivetran/Airbyte for database sources.
-
-
-
-- **[Hevo Data](https://hevodata.com/)**
-
-  **No-code ETL/ELT with real-time CDC**. **Pricing**: Starting at $239/month; transparent pricing with free tier. **Free tier**: Trial available. **Best for**: teams wanting simple, no-code CDC setup with 150+ connectors—**trade-off**: fewer connectors than Fivetran.
-
-
-
-- **[Matillion](https://www.matillion.com/)**
-
-  **Cloud-native ETL/ELT** for Snowflake, BigQuery, Redshift, and Databricks. **Pricing**: Consumption-based. **Free tier**: Trial available. **Best for**: data teams wanting visual transformation pipelines within their cloud warehouse.
-
-
-
-- **[Qlik Replicate](https://www.qlik.com/)**
-
-  **Enterprise CDC and replication** with broad source support including SAP and mainframe. **Pricing**: Quote-only. **Free tier**: None. **Best for**: enterprises needing high-volume CDC from legacy systems.
-
-
-
-- **[Estuary Flow](https://estuary.dev/)**
-
-  **Streaming data pipeline platform** with CDC capabilities. **Pricing**: Transparent usage-based pricing; first 10 GB and 2 connectors free. **Free tier**: Yes, 10 GB/month. **Best for**: teams wanting transparent, usage-based pricing for streaming pipelines.
-
-
+| Company / Product | Scale (Valuation / Revenue) | Starting Pricing | Free Tier / Free Trial Limits | Key Features & Best For |
+|---|---|---|---|---|
+| **[Google Cloud Dataflow](https://cloud.google.com/dataflow)** | **$3.8T+ Market Cap** (Alphabet Inc. Parent Valuation; ~$350B+ annual revenue) | **~$0.069/vCPU-hr** (streaming worker) & **~$0.056/vCPU-hr** (batch worker) + $0.003557/GiB-hr memory | **$300 credit free trial** valid for 90 days across Google Cloud; capped at 8 max cores during trial | Managed Apache Beam engine for unified stream/batch pipelines with horizontal autoscaling; best for GCP-native workloads. |
+| **[AWS Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/)** | **$2.7T+ Market Cap** (Amazon Parent Valuation; AWS standalone run-rate ~$184B ARR) | **$0.029 per GB** ingested (first 500 TB/month; calculated in 5 KB increments) | **No dedicated permanent free tier**; new accounts get standard AWS Free Tier credits (usage billed from first GB) | Fully managed serverless delivery of streaming data to S3, Redshift, OpenSearch, and Splunk without consumer management. |
+| **[Snowflake Snowpipe](https://www.snowflake.com/)** | **~$110B–$118B Market Cap** (NYSE: SNOW; ~$4.7B annual revenue) | **0.0037 Snowflake credits per GB** loaded (~$0.0074 to ~$0.0148/GB based on $2–$4/credit edition pricing) | **$400 free usage credits** valid for 30 days (full access to platform, Snowpipe, and virtual warehouses) | Serverless, low-latency continuous file ingestion from S3, GCS, and Azure Blob storage directly into Snowflake tables. |
+| **[Confluent Cloud](https://www.confluent.io/)** | **$11B Valuation** (Acquired by IBM; ~$1B+ ARR) | **$0/hr base (scales to zero when idle)**; active usage starts at **$0.14/eCKU-hour** + $0.10/GB ingress | **$400 free credit trial** valid for 30 days with no cluster capacity commitments required | Fully managed Apache Kafka service with built-in connectors, stream processing (ksqlDB / Apache Flink), and schema registry. |
+| **[Qlik Replicate](https://www.qlik.com/)** | **~$10B Valuation** (Thoma Bravo & sovereign equity backing; $200M+ cloud integration ARR) | Custom enterprise licensing; entry-level deployments start around **~$1,000/month** or quote-based capacity tiers | **No self-service free tier or open trial**; enterprise evaluation is offered strictly via sales-guided Proof of Concept (PoC) | Enterprise-grade Change Data Capture (CDC) and replication supporting legacy/mainframe architectures, SAP, and relational DBs. |
+| **[Fivetran](https://www.fivetran.com/)** | **$5.6B Valuation** (Series D; $300M+ ARR) | Pay-as-you-go starting at **~$500 per million MAR** (Monthly Active Rows) with a **$5/month base charge** | **Free tier: 500,000 MAR/month forever** (up to 3,500 MAR for activations, 5,000 transformation model runs, 15-min syncs) | Zero-maintenance managed ELT platform featuring 500+ connectors with automated schema drift handling and normalization. |
+| **[Airbyte Cloud](https://airbyte.com/)** | **$1.5B Valuation** (Series B unicorn) | **$20/month** (Standard plan base, includes ~5 credits; additional credits at $5/credit; 6 credits/1M API rows or 4 credits/1GB DB sync) | **14-day free trial capped at 400 credits** (~100 GB database syncs; no credit card required); self-hosted open-source version is free forever | Cloud-hosted engine backed by 600+ open-source connectors, no-code Connector Builder, and Agent SDK for AI workloads. |
+| **[Matillion](https://www.matillion.com/)** | **$1.5B Valuation** (Series E unicorn; ~$80M–$100M revenue) | Consumption-based credit model; AWS Marketplace hourly rate starts at **~$2.00–$3.50/credit** (~1 credit/task-hr orchestration) | **14-day free trial with 500 usage credits** (available on sample environments or connected cloud warehouses) | Cloud-native visual ELT push-down transformation platform designed for Snowflake, BigQuery, Databricks, and Redshift. |
+| **[Hevo Data](https://hevodata.com/)** | **~$45M–$47M Annual Revenue** (~$43M total venture funding) | **$265/month** billed annually ($299 billed monthly) for the Starter Plan (5M events/month) | **Free tier: 1 million events/month forever** (up to 5 users, limited connectors, 1-hr scheduling) + 14-day full feature trial | Low-maintenance, no-code continuous data pipeline platform offering real-time CDC with 150+ source integrations. |
+| **[Estuary Flow](https://estuary.dev/)** | **~$100M–$250M Valuation** ($17M Series A; ~$1M–$10M revenue) | **$0.50 per GB** transferred on Cloud plan beyond free tier limits | **Free tier: 10 GB/month data transfer forever** and up to **2 active connector tasks** (no credit card required) | Real-time streaming ETL/CDC platform built on Gazette streaming broker, delivering millisecond data synchronization. |
 
 ## Open-Source GitHub Projects
 
